@@ -983,7 +983,7 @@ main {
 }
 
 .project-item { display: none; }
-.project-item img{ width: 250px; height: 150px;}
+
 
 .project-item.active {
   display: block;
