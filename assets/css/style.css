@@ -2017,3 +2017,34 @@ color: white;
 .certifications {
   padding-bottom: 30px;
 }
+.social-links2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 20px;
+  border: 1px solid #333333;
+  border-radius: 15px;
+
+}
+
+.social-item2 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+
+.social-item2 img {
+  width: 40px;
+  height: 40px;
+  filter: grayscale(100%);
+}
+
+.social-item2 img:hover {
+  filter: grayscale(0%);
+  width: 42px;
+  height: 42px;
+}
