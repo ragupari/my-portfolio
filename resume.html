@@ -3,38 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Render PDF</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Parishith Ragumar - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        body, html {
+        body {
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden; /* Disable body scrolling */
+            background-color: #f7f7f7;
+            color: #333;
         }
 
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: block;
+        header {
+            background-color: #fff;
+            padding: 20px;
+            border-bottom: 2px solid #ddd;
         }
 
-        /* Ensure full height on mobile devices */
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 1.2em;
+            color: #1a73e8;
+            margin-top: 10px;
+        }
+
+        .contact-info a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .summary, .education, .projects, .skills, .coursework, .clubs, .learning, .achievements, .languages {
+            margin: 30px auto;
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        .summary h2, .education h2, .projects h2, .skills h2, .coursework h2, .clubs h2, .learning h2, .achievements h2, .languages h2 {
+            font-size: 1.5em;
+            color: #1a73e8;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section-content {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .project-links a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .project-links {
+            font-size: 1.1em;
+        }
+
+        .achievements p, .languages p {
+            font-size: 1.1em;
+        }
+
+        .languages p {
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-top: 2px solid #ddd;
+        }
+
+        footer a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
         @media (max-width: 768px) {
-            html, body {
-                height: 100%;
-                overflow: auto; /* Allow scrolling on smaller devices */
-            }
-            iframe {
-                height: 100vh; /* Full height */
-                overflow-y: auto; /* Enable scrolling inside iframe */
+            .summary, .education, .projects, .skills, .coursework, .clubs, .learning, .achievements, .languages {
+                width: 95%;
             }
         }
     </style>
 </head>
 <body>
-    <iframe src="assets/cv.pdf"></iframe>
+    <header>
+        <h1>Parishith Ragumar</h1>
+        <div class="contact-info">
+            <p>+94 76 1711 351 | Point-Pedro Rd, Kopay South, Jaffna, Sri Lanka</p>
+            <p><a href="mailto:parishith.22@cse.mrt.ac.lk">Email</a> | <a href="http://www.linkedin.com/in/rp07official">LinkedIn</a> | <a href="https://github.com/ragupari">GitHub</a> | <a href="https://ragupari.github.io">Website</a></p>
+        </div>
+    </header>
+
+    <div class="summary">
+        <h2>Summary</h2>
+        <p class="section-content">
+            Aspiring Full-Stack Developer with a strong foundation in software engineering, eager to apply technical skills and problem-solving abilities in a dynamic team environment. Experienced in full-stack web development, embedded systems, and AI-powered applications. Passionate about learning and leveraging innovative technologies to create impactful solutions. Highly motivated to gain hands-on experience through an internship opportunity.
+        </p>
+    </div>
+
+    <div class="education">
+        <h2>Education</h2>
+        <p class="section-content"><strong>University of Moratuwa</strong>, Sri Lanka <span style="float:right;">Feb 2023 - Present</span><br>
+            Bachelor of the Science of Engineering (Honors) in Computer Science and Engineering</p>
+        <p class="section-content"><strong>Jaffna Hindu College</strong>, Jaffna, Sri Lanka <span style="float:right;">Jan 2013 - Jan 2022</span><br>
+            Secondary Level (Grade 06 to 13)<br>
+            GCE Advanced Level (Mathematics, Physics, Chemistry)<br>
+            3A | Island Rank: 178 | Z-Score: 2.4758</p>
+    </div>
+
+    <div class="projects">
+        <h2>Projects</h2>
+        <div class="section-content">
+            <div class="project-links">
+                <p><strong>AI-Powered Physiotherapy Web App</strong> | <a href="https://github.com/ragupari/dreamhack-project-team-Itachi.git">Project Link</a></p>
+                <ul>
+                    <li>Implemented real-time exercise tracking using OpenCV and Mediapipe.</li>
+                    <li>Developed an AI-powered RAG chatbot with LangChain and OpenAI for personalized guidance.</li>
+                    <li>Enabled video uploads for feedback and progress tracking.</li>
+                    <li>Stack: Python, OpenCV, Mediapipe, OpenAI, Streamlit, LangChain, Flask</li>
+                </ul>
+            </div>
+            <div class="project-links">
+                <p><strong>School Admission Distance Calculator</strong> | <a href="https://github.com/ragupari/school-deduction-points-calculator">Project Link</a></p>
+                <ul>
+                    <li>Built a Django web application to automate school admissions using Google Maps API.</li>
+                    <li>Integrated a UI with Tailwind CSS and optimized backend processing using Django’s modular architecture.</li>
+                    <li>Stack: Django MVC, Google Maps API, CSRF tokens, Tailwind CSS, Django Cotton, HTML, CSS, JavaScript</li>
+                </ul>
+            </div>
+            <div class="project-links">
+                <p><strong>Supply Chain Management Web App</strong> | <a href="https://github.com/ragupari/SCM-project.git">Project Link</a></p>
+                <ul>
+                    <li>Developed a full-stack web application for managing stocks, customers, and logistics.</li>
+                    <li>Implemented secure authentication using JWT, Axios for API requests, and React Router for navigation.</li>
+                    <li>Used MySQL with indexing and normalization for optimized database management.</li>
+                    <li>Stack: Node.js, React.js, MySQL, Express.js, JWT, Git, Bootstrap, JavaScript, HTML, CSS</li>
+                </ul>
+            </div>
+            <div class="project-links">
+                <p><strong>Nanoprocessor Design</strong> | <a href="https://github.com/ragupari/nano-processor-second-sem-project.git">Project Link</a></p>
+                <ul>
+                    <li>Designed and implemented a 4-bit nanoprocessor capable of executing a custom set of instructions.</li>
+                    <li>Developed a 4-bit arithmetic unit with 2's complement representation and 2-bit unsigned multiplication.</li>
+                    <li>Implemented a custom instruction decoder, 8-register bank, and 3-bit program counter.</li>
+                    <li>Deployed and tested on BASYS 3 FPGA.</li>
+                    <li>Stack: VHDL, BASYS 3 FPGA, Xilinx Vivado, Logic Design</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills">
+        <h2>Skills</h2>
+        <p class="section-content"><strong>Languages:</strong> Python, Java, PHP, TypeScript, HTML/CSS/JavaScript, C++, SQL</p>
+        <p class="section-content"><strong>Frameworks:</strong> Node.js, React.js, Express, Bootstrap, Django, Flutter</p>
+        <p class="section-content"><strong>Databases:</strong> MySQL, SQLite, MongoDB</p>
+        <p class="section-content"><strong>Cloud and DevOps Tools:</strong> Git, AWS EC2</p>
+        <p class="section-content"><strong>Soft Skills:</strong> Teamwork, Communication, Time Management, Leadership, Adaptability</p>
+    </div>
+
+    <div class="coursework">
+        <h2>Relevant Coursework</h2>
+        <ul class="section-content">
+            <li>Software Engineering (Following)</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Database Systems</li>
+            <li>Program Construction</li>
+            <li>Programming Fundamentals</li>
+            <li>Introduction to Artificial Intelligence</li>
+            <li>Operational System Security (Following)</li>
+        </ul>
+    </div>
+
+    <div class="clubs">
+        <h2>Clubs & Organizations</h2>
+        <ul class="section-content">
+            <li>AIESEC in University of Moratuwa</li>
+            <li>UOM Sports Community</li>
+            <li>Tamil Literary Association</li>
+        </ul>
+    </div>
+
+    <div class="learning">
+        <h2>Online Learning and Certifications</h2>
+        <ul class="section-content">
+            <li><strong>Building Generative AI Applications with Gradio</strong> offered by DeepLearning.AI (Aug 2024)</li>
+            <li><strong>The Complete Full-Stack Web Development Bootcamp</strong> offered by Udemy (Following)</li>
+            <li><strong>Google Cybersecurity Professional Certificate</strong> (Following)</li>
+            <li><strong>Pandas</strong> offered by Kaggle (Sep 2024)</li>
+            <li><strong>Programming in Python-1</strong> offered by University of Moratuwa (Nov 2022)</li>
+        </ul>
+    </div>
+
+    <div class="achievements">
+        <h2>Achievements & Awards</h2>
+        <p class="section-content"><strong>University Colours Insignia Recipient (2024)</strong> - Awarded for outstanding performance in basketball during the SLUG 2023 tournament.</p>
+        <p class="section-content"><strong>AI-Hackathon by Dreamspace (2025)</strong> – Runners-up</p>
+        <p class="section-content"><strong>Yarl Geek Challenge - Juniors (2018)</strong> – Best Web Application</p>
+        <p class="section-content"><strong>Mahapola Scholarship</strong> - Awarded by the Government of Sri Lanka to pursue undergraduate studies.</p>
+    </div>
+
+    <div class="languages">
+        <h2>Language Proficiency</h2>
+        <p class="section-content"><strong>English:</strong> Fluent</p>
+        <p class="section-content"><strong>Tamil:</strong> Native</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Parishith Ragumar</p>
+    </footer>
 </body>
 </html>
