@@ -335,6 +335,10 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+  
+}
+.avatar-box img {
+  border-radius: 20px;
 }
 
 .info-content .name {
@@ -2047,4 +2051,27 @@ color: white;
   filter: grayscale(0%);
   width: 42px;
   height: 42px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(  --vegas-gold);
+
+  border: 2px solid var(  --vegas-gold);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.bi-download{
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  background:var(  --vegas-gold);
+  color:var(--jet)
 }
